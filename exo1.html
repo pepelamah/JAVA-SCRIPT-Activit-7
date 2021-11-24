@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+ 
+<html> 
+<head> 
+<title> Formulaires</title> 
+<meta charset="utf-8"> 
+</head> 
+ 
+<body> 
+    <h1>Compteur</h1> 
+    <p>Heures</p>
+    <p id="heure">00</p>
+    <p>Minutes</p>
+    <p id="minute">00</p>
+    <p>Secondes</p>
+    <p id="seconde">00</p>
+    
+    
+    
+
+    <button onclick="depart()" >depart</button>
+    <button>arret</button>
+    <button>remise a zero</button>
+    <pre>
+        <script>
+            var seconde=1000;
+            function depart(){
+                for(var i=0;i<6000;i=i+1000)
+                {
+                    
+                    seconde=seconde+i
+                    seconde=1000
+                    setInterval(miseajour, seconde)
+                }
+                
+            }
+            var minute=0
+            function miseajour()
+            {
+                console.log("le compteur est lance: ")
+                if(seconde==6000)
+                {
+                    minute=1
+                    
+                }
+                
+                if(seconde==6000)
+                {
+                    minute=1
+                }
+            }
+        </script>
+    </pre>
+
+
+
+</form> 
+ </body> 
+ 
+</html>
